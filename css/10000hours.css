@@ -43,6 +43,9 @@
   overflow: hidden;
 }
 
+button {
+  cursor: pointer;
+}
 body {
   background-color: #5b2386;
   font-family: 'GmarketSansMedium';
