@@ -34,9 +34,15 @@
       format('opentype');
 }
 
-* {
-  box-sizing: border-box;
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
+
 body {
   background-color: #5b2386;
   font-family: 'GmarketSansMedium';
@@ -45,14 +51,14 @@ body {
   flex-direction: column; */
 }
 
-h1 {
+.title-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-h1 > .title {
+.title-wrap > .title {
   margin-top: 194px;
   width: 564px;
   height: 112px;
@@ -60,7 +66,7 @@ h1 > .title {
   margin-bottom: 125px;
 }
 
-h1 > .clock-wrap {
+.title-wrap > .clock-wrap {
   position: absolute;
   width: 261px;
   height: 265px;
@@ -274,13 +280,13 @@ input::placeholder {
 }
 
 @media screen and (max-width: 360px) {
-  h1 > .title {
+  .title-wrap > .title {
     width: 267px;
     height: 53px;
     margin-top: 76px;
     margin-bottom: 69px;
   }
-  h1 > .clock-wrap {
+  .title-wrap > .clock-wrap {
     width: 125px;
     height: 126px;
     top: 41px;
